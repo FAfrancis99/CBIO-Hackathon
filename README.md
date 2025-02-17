@@ -58,7 +58,8 @@ Using machine learning to predict antibiotic resistance from raw genomic sequenc
 
 
 ### Biggest k-mer Differences Between BLUE and RED Resistance
-![image](https://github.com/user-attachments/assets/fa60f8fd-0c9d-41ad-b962-a0547b90e09b)
+![image](https://github.com/user-attachments/assets/466f2855-6afa-45b0-94a1-f05f97387ad5)
+
 
 
 ### Statistical Significance of k-mers in RED Dataset

@@ -1,4 +1,4 @@
-# 📊 CBIO Hackathon - Predicting Antibiotic Resistance
+# 🧬 CBIO Hackathon - Predicting Antibiotic Resistance
 
 ## 🧑‍🤝‍🧑 Group Members
 - **Fahim Francis:** 209177575, fahim.francis@mail.huji.ac.il
@@ -66,9 +66,9 @@ Using machine learning to predict antibiotic resistance from raw genomic sequenc
 ![image](https://github.com/user-attachments/assets/0b0e4036-b188-4b71-8125-6b38c23878ad)
 
 
-# 🧬 CBIO Hackathon - Predicting Antibiotic Resistance
 
 ## 🗂️ Repository Structure
+```bash
 📂 data/
    ├── BLUE/
    │   ├── betalactamases_antibiotic_resistant.fa

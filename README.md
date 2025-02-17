@@ -48,21 +48,21 @@ Using machine learning to predict antibiotic resistance from raw genomic sequenc
 
 
 ### Top 10 Important k-mers for BLUE and RED Resistance
-[image](https://github.com/user-attachments/assets/5cadb732-1784-4f80-b19a-cc5317579055)
+![image](https://github.com/user-attachments/assets/5cadb732-1784-4f80-b19a-cc5317579055)
 
 
 
 ### Position Analysis of Key k-mers
-[image](https://github.com/user-attachments/assets/57fb6d85-64d8-4f20-9639-a48a6c098fb7)
+![image](https://github.com/user-attachments/assets/57fb6d85-64d8-4f20-9639-a48a6c098fb7)
 
 
 
 ### Biggest k-mer Differences Between BLUE and RED Resistance
-[image](https://github.com/user-attachments/assets/fa60f8fd-0c9d-41ad-b962-a0547b90e09b)
+![image](https://github.com/user-attachments/assets/fa60f8fd-0c9d-41ad-b962-a0547b90e09b)
 
 
 ### Statistical Significance of k-mers in RED Dataset
-[image](https://github.com/user-attachments/assets/0b0e4036-b188-4b71-8125-6b38c23878ad)
+![image](https://github.com/user-attachments/assets/0b0e4036-b188-4b71-8125-6b38c23878ad)
 
 
 ## 📂 Repository Structure

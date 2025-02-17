@@ -1,71 +1,60 @@
-## 📊 **CBIO Hackathon: Predicting Antibiotic Resistance** 
-### 📌 **Project Overview**  
-This repository contains the code and models developed during the CBIO Hackathon for predicting antibiotic resistance from raw genomic sequences using machine learning techniques. We applied k-mer transformations and compared the performance of Logistic Regression, SVM, and Random Forest models to classify resistant and non-resistant bacterial strains.  
+# 📊 CBIO Hackathon - Predicting Antibiotic Resistance
 
-### 👥 **Team Members**  
-- **Faheem Francis:** 209177575, fahim.francis, [fahim.francis@mail.huji.ac.il](mailto:fahim.francis@mail.huji.ac.il)  
-- Asmaa Ghrayeb: 212017719, asmaa.ghrayeb, [asmaa.ghrayeb@mail.huji.ac.il](mailto:asmaa.ghrayeb@mail.huji.ac.il)  
-- Adam Fattum: 325156842, adam_307, [adam.fattum@mail.huji.ac.il](mailto:adam.fattum@mail.huji.ac.il)  
-- Maryan Kiwan: 212514681, maryan.kiwan, [maryan.kiwan@mail.huji.ac.il](mailto:maryan.kiwan@mail.huji.ac.il)  
-- Mustafa Shouman: 212092613, mustafashouman, [mustafa.shouman@mail.huji.ac.il](mailto:mustafa.shouman@mail.huji.ac.il)  
+## 🧑‍🤝‍🧑 Group Members
+- **Fahim Francis:** 209177575, fahim.francis@mail.huji.ac.il
+- **Asmaa Ghrayeb:** 212017719, asmaa.ghrayeb@mail.huji.ac.il
+- **Adam Fattum:** 325156842, adam.fattum@mail.huji.ac.il
+- **Maryan Kiwan:** 212514681, maryan.kiwan@mail.huji.ac.il
+- **Mustafa Shouman:** 212092613, mustafa.shouman@mail.huji.ac.il
 
----
+## 📝 Overview
+Using machine learning to predict antibiotic resistance from raw genomic sequences with k-mer analysis on MEGARes data for Beta-lactamase (BLUE) and Aminoglycoside (RED) resistance.
 
-### 🛠️ **Project Structure**  
+## 💾 Data and Preprocessing
+- **Source:** MEGARes Database  
+- **Classes:** Beta-lactamase (BLUE), Aminoglycoside (RED)  
+- **Feature Extraction:** k-mer transformation (k=2,3,4,5)  
+- **Preprocessing:** Stratified split, class weighting, SMOTE oversampling
 
+## 🤖 Models and Training
+1. **Logistic Regression:** Baseline model with regularization tuning  
+2. **SVM (RBF Kernel):** Non-linear pattern detection (Final Model: k=4)  
+3. **Random Forest:** Feature importance analysis
 
+## 📊 Performance Summary
+| k-mer | Model           | Accuracy |
+|------|-----------------|----------|
+| 2    | Random Forest   | 0.873    |
+| 3    | Random Forest   | 0.878    |
+| 4    | SVM (Final)    | 0.906    |
+| 5    | SVM            | 0.891    |
 
-### 📈 **Machine Learning Models Used**  
-- 🧪 **Logistic Regression:** Baseline model for binary classification.  
-- 🧠 **Support Vector Machine (SVM):** Used RBF kernel for non-linear pattern detection.  
-- 🌲 **Random Forest:** Provided feature importance and handled large feature spaces effectively.  
+**Final Model (SVM, k=4) Metrics:**  
+- Balanced Accuracy: 0.919  
+- Precision: 0.992  
+- Recall: 0.839  
+- ROC AUC: 0.988
 
----
+## 📈 Key Insights
+- **Top k-mers (BLUE):** CAGC, GAGG, AGGT  
+- **Top k-mers (RED):** CGAG, GAGG, CTTG  
+- **Largest Differences:** GCAA, TGTC, CAGC  
+- **Most Significant:** CAGC (BLUE), CGAG (RED)
 
-### 📊 **Model Performance**  
-| **Model**           | **k-mer Size** | **Balanced Accuracy** | **F1 Score** | **ROC AUC** |
-|---------------------|---------------|----------------------|-------------|------------|
-| Logistic Regression | 4             | 0.505              | 0.412       | 0.601      |
-| SVM (RBF)          | 4             | **0.919**          | **0.909**   | **0.988**  |
-| Random Forest       | 3             | 0.878              | 0.896       | 0.965      |
-
----
-
-### 🧬 **K-mer Analysis Highlights**  
-- The **SVM model with k=4** achieved the best performance with a Balanced Accuracy of **0.919**.  
-- **Random Forest** revealed important k-mers, such as `CAGC`, `GAGG`, and `AGGT`, strongly associated with resistance.  
-- Key statistical insights: `CAGC` had the lowest p-value and a fold increase of 1.84x in resistant strains.  
-
----
-
-### ⚙️ **How to Run the Project**  
-
-#### ✅ **Step 1: Clone the Repository**  
+## 📂 Repository Structure
 ```bash
-git clone https://github.com/your-github/cbio-antibiotic-resistance.git
-cd cbio-antibiotic-resistance
-⚙️ How to Run the Project
-✅ Step 1: Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/your-github/cbio-antibiotic-resistance.git
-cd cbio-antibiotic-resistance
-✅ Step 2: Create a Virtual Environment
-bash
-Copy
-Edit
-python3 -m venv venv
-source venv/bin/activate
-✅ Step 3: Install Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-✅ Step 4: Run the Models
-bash
-Copy
-Edit
-python src/model.py
-✅ Step 5: View Results
-Results will be saved in the /results directory, including performance metrics and confusion matrices.
+📂 data/
+   ├── megares_resistant.fasta
+   └── megares_non_resistant.fasta
+📂 src/
+   ├── preprocess.py
+   ├── train_models.py
+   ├── evaluate.py
+   └── visualize.py
+📂 results/
+   └── model_performance.csv
+📂 images/
+   ├── roc_curves.png
+   └── top_kmers.png
+📄 README.md
+📄 requirements.txt

@@ -40,6 +40,22 @@ Using machine learning to predict antibiotic resistance from raw genomic sequenc
 - **Top k-mers (RED):** CGAG, GAGG, CTTG  
 - **Largest Differences:** GCAA, TGTC, CAGC  
 - **Most Significant:** CAGC (BLUE), CGAG (RED)
+## 📊 Visualizations
+
+### ROC Curves for Model Performance
+![ROC Curves](./images/roc_curves.png)
+
+### Top 10 Important k-mers for BLUE and RED Resistance
+![Top 10 k-mers](./images/top_kmers.png)
+
+### Position Analysis of Key k-mers
+![Position Analysis](./images/position_analysis.png)
+
+### Biggest k-mer Differences Between BLUE and RED Resistance
+![k-mer Differences](./images/kmer_differences.png)
+
+### Statistical Significance of k-mers in RED Dataset
+![Statistical Significance](./images/stat_significance.png)
 
 ## 📂 Repository Structure
 ```bash

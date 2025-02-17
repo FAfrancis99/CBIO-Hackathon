@@ -15,6 +15,8 @@ Using machine learning to predict antibiotic resistance from raw genomic sequenc
 - **Classes:** Beta-lactamase (BLUE), Aminoglycoside (RED)  
 - **Feature Extraction:** k-mer transformation (k=2,3,4,5)  
 - **Preprocessing:** Stratified split, class weighting, SMOTE oversampling
+![image](https://github.com/user-attachments/assets/6faa1c4d-de2d-4122-a97c-f82c67448fc4)
+
 
 ## 🤖 Models and Training
 1. **Logistic Regression:** Baseline model with regularization tuning  
@@ -81,3 +83,6 @@ Using machine learning to predict antibiotic resistance from raw genomic sequenc
    ├── model.py    # Model training and evaluation
    └── model_selection.py  # Hyperparameter tuning and selection
 📄 README.md
+## 📑 Report Section 
+[CBIO-Report.pdf](https://github.com/user-attachments/files/18833750/CBIO-Report.pdf)
+

@@ -66,20 +66,18 @@ Using machine learning to predict antibiotic resistance from raw genomic sequenc
 ![image](https://github.com/user-attachments/assets/0b0e4036-b188-4b71-8125-6b38c23878ad)
 
 
-## 📂 Repository Structure
-```bash
+# 🧬 CBIO Hackathon - Predicting Antibiotic Resistance
+
+## 🗂️ Repository Structure
 📂 data/
-   ├── megares_resistant.fasta
-   └── megares_non_resistant.fasta
+   ├── BLUE/
+   │   ├── betalactamases_antibiotic_resistant.fa
+   │   ├── betalactamases_non-antibiotic_resistant.fa
+   ├── RED/
+   │   ├── Aminoglycosides_antibiotic_resistant.fa
+   │   ├── Aminoglycosides_non-antibiotic_resistant.fa
 📂 src/
-   ├── preprocess.py
-   ├── train_models.py
-   ├── evaluate.py
-   └── visualize.py
-📂 results/
-   └── model_performance.csv
-📂 images/
-   ├── roc_curves.png
-   └── top_kmers.png
+   ├── k_mer.py    # K-mer feature extraction
+   ├── model.py    # Model training and evaluation
+   └── model_selection.py  # Hyperparameter tuning and selection
 📄 README.md
-📄 requirements.txt

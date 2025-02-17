@@ -43,7 +43,8 @@ Using machine learning to predict antibiotic resistance from raw genomic sequenc
 ## 📊 Visualizations
 
 ### ROC Curves for Model Performance
-[image](https://github.com/user-attachments/assets/4034efa6-2d7d-4773-9915-2ad8840e79a2)
+![image](https://github.com/user-attachments/assets/bd75dae2-d028-46ce-b76d-3c566a2f7f12)
+
 
 
 ### Top 10 Important k-mers for BLUE and RED Resistance

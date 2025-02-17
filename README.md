@@ -15,7 +15,8 @@ Using machine learning to predict antibiotic resistance from raw genomic sequenc
 - **Classes:** Beta-lactamase (BLUE), Aminoglycoside (RED)  
 - **Feature Extraction:** k-mer transformation (k=2,3,4,5)  
 - **Preprocessing:** Stratified split, class weighting, SMOTE oversampling
-![image](https://github.com/user-attachments/assets/6faa1c4d-de2d-4122-a97c-f82c67448fc4)
+![image](https://github.com/user-attachments/assets/d107a22e-ee1f-4121-8120-418242b217c7)
+
 
 
 ## 🤖 Models and Training

@@ -43,19 +43,24 @@ Using machine learning to predict antibiotic resistance from raw genomic sequenc
 ## 📊 Visualizations
 
 ### ROC Curves for Model Performance
-![ROC Curves](./images/roc_curves.png)
+![ROC Curves]![image](https://github.com/user-attachments/assets/4034efa6-2d7d-4773-9915-2ad8840e79a2)
+
 
 ### Top 10 Important k-mers for BLUE and RED Resistance
 ![Top 10 k-mers](./images/top_kmers.png)
 
 ### Position Analysis of Key k-mers
-![Position Analysis](./images/position_analysis.png)
+![Position Analysis]![image](https://github.com/user-attachments/assets/57fb6d85-64d8-4f20-9639-a48a6c098fb7)
+
+
 
 ### Biggest k-mer Differences Between BLUE and RED Resistance
-![k-mer Differences](./images/kmer_differences.png)
+![k-mer Differences]![image](https://github.com/user-attachments/assets/fa60f8fd-0c9d-41ad-b962-a0547b90e09b)
+
 
 ### Statistical Significance of k-mers in RED Dataset
-![Statistical Significance](./images/stat_significance.png)
+![Statistical Significance]![image](https://github.com/user-attachments/assets/0b0e4036-b188-4b71-8125-6b38c23878ad)
+
 
 ## 📂 Repository Structure
 ```bash
